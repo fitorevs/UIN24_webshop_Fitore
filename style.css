@@ -27,7 +27,7 @@ p { font-size: 1rem; }
 h2 { font-size: 2.5rem; font-weight: 700; } 
 h3 { font-size: 1,5rem; font-weight: 600; }
 
-/* Main structure */
+/* MAIN STRUCTURE */
 #container {
     width: 100%;
     max-width: var(--maxsize);
@@ -36,7 +36,7 @@ h3 { font-size: 1,5rem; font-weight: 600; }
     background-color: var(--white);
 }
 
-/* Header */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -91,8 +91,61 @@ header button span {
     font-size: 1.2rem;
 }
 
+/* HANDLEVOGN PRODUKTLISTE */
+
+#cart ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+#cart ul li {
+    padding: 0.25rem;
+    border-bottom: 1px solid var(--green);
+}
+
+#cart ul li button {
+    background-color: var(--red);
+    color: var(--white);
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    min-width: 1rem;
+    cursor: pointer;
+}
+
+#cart ul li span {
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+.title {
+    width: calc(100% - 8.5rem);
+}
+
+.price {
+    width: 4.5rem;
+}
+
+.quantity {
+    width: 2.5rem;
+}
+
+.functions {
+    width: 1.5rem;
+}
+
 nav {
     background-color: var(--red);
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
 ul {
