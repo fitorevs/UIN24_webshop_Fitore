@@ -85,7 +85,12 @@ header button span {
     top: 76px;
     right: 0;
     padding: 1rem;
-    ;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+#cart.show {
+    opacity: 1;
 }
 
 #cart h2 {
@@ -152,13 +157,6 @@ nav ul {
     gap: 1rem;
 }
 
-ul {
-    display: flex;
-    padding: 0;
-    list-style-type: none;
-    gap: 1rem; /* 1rem top and bottom, 0 left and right */
-}
-
 nav a {
     display: inline-block;
     padding: 1rem;
@@ -178,23 +176,31 @@ nav a:hover {
 
 /* KATEGORISIDE */
 
-main article h3 {
-    margin: 0.25rem 0;
-    text-transform: uppercase;
-
-}
-
-main article a {
-    text-transform: uppercase;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 2rem; /* 2rem top and bottom, 0 left and right */
     padding: 1rem;
 }
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main article {
+    max-width: 31%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 1rem solid var(--green);
+}
+
 
 main h2 {
     width: 100%;
@@ -220,7 +226,7 @@ main article img {
 
 main article h3 {
     margin: 0.25rem 0;
-    font-size: var(--h3);
+    text-transform: uppercase;
 }
 
 main article a {
